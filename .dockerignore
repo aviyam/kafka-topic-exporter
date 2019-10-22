@@ -1,0 +1,5 @@
+src/*
+config/*
+.gitignore
+README.md
+pom.xml
