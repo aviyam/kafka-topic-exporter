@@ -3,24 +3,24 @@
 
 echo "------ Writing config file ------"
 
-echo EXPORTER_PORT=$EXPORTER_PORT									> config.properties
-echo EXPORTER_METRIX_EXPIRE_SECONDS=$EXPORTER_METRIX_EXPIRE_SECONDS	>> config.properties
-echo KAFKA_CONSUMER_TOPICS=$KAFKA_CONSUMER_TOPICS					>> config.properties
-echo KAFKA_CONSUMER_REMOVE_PREFIX=$KAFKA_CONSUMER_REMOVE_PREFIX		>> config.properties
-echo CONSUL_SERVER_URL=$CONSUL_SERVER_URL							>> config.properties
-echo CONSUL_KAFKA_SERVICENAME=$CONSUL_KAFKA_SERVICENAME				>> config.properties
-echo BOOTSTRAP_SERVERS=$BOOTSTRAP_SERVERS							>> config.properties
-echo GROUP_ID=$GROUP_ID												>> config.properties
+echo exporter.port=$EXPORTER_PORT									> config.properties
+echo exporter.metrix.expire.seconds=$EXPORTER_METRIX_EXPIRE_SECONDS	>> config.properties
+echo kafka.consumer.topics=$KAFKA_CONSUMER_TOPICS					>> config.properties
+echo kafka.consumer.remove.prefix=$KAFKA_CONSUMER_REMOVE_PREFIX		>> config.properties
+echo consul.server.url=$CONSUL_SERVER_URL							>> config.properties
+echo consul.kafka.servicename=$CONSUL_KAFKA_SERVICENAME				>> config.properties
+echo bootstrap.servers=$BOOTSTRAP_SERVERS							>> config.properties
+echo group.id=$GROUP_ID												>> config.properties
 
 
-echo EXPORTER_PORT=$EXPORTER_PORT
-echo EXPORTER_METRIX_EXPIRE_SECONDS=$EXPORTER_METRIX_EXPIRE_SECONDS
-echo KAFKA_CONSUMER_TOPICS=$KAFKA_CONSUMER_TOPICS
-echo KAFKA_CONSUMER_REMOVE_PREFIX=$KAFKA_CONSUMER_REMOVE_PREFIX
-echo CONSUL_SERVER_URL=$CONSUL_SERVER_URL
-echo CONSUL_KAFKA_SERVICENAME=$CONSUL_KAFKA_SERVICENAME
-echo BOOTSTRAP_SERVERS=$BOOTSTRAP_SERVERS
-echo GROUP_ID=$GROUP_ID
+echo exporter.port=$EXPORTER_PORT
+echo exporter.metrix.expire.seconds=$EXPORTER_METRIX_EXPIRE_SECONDS
+echo kafka.consumer.topics=$KAFKA_CONSUMER_TOPICS
+echo kafka.consumer.remove.prefix=$KAFKA_CONSUMER_REMOVE_PREFIX
+echo consul.server.url=$CONSUL_SERVER_URL
+echo consul.kafka.servicename=$CONSUL_KAFKA_SERVICENAME
+echo bootstrap.servers=$BOOTSTRAP_SERVERS
+echo group.id=$GROUP_ID
 
 echo "----- Starting exporter --------"
 exec "$@"
