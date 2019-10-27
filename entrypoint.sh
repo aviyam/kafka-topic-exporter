@@ -10,7 +10,7 @@ echo kafka.consumer.remove.prefix=$KAFKA_CONSUMER_REMOVE_PREFIX     >> config.pr
 echo consul.server.url=$CONSUL_SERVER_URL                           >> config.properties
 echo consul.kafka.servicename=$CONSUL_KAFKA_SERVICENAME             >> config.properties
 echo bootstrap.servers=$BOOTSTRAP_SERVERS							              >> config.properties
-echo group.id=$GROUP_ID										                      		>> config.properties
+echo group.id=$GROUP_ID                                             >> config.properties
 
 
 echo exporter.port=$EXPORTER_PORT
