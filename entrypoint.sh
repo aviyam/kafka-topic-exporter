@@ -4,7 +4,7 @@
 echo "------ Writing config file ------"
 
 echo exporter.port=$EXPORTER_PORT                                   > config.properties
-echo exporter.metrix.expire.seconds=$EXPORTER_METRIX_EXPIRE_SECONDS >> config.properties
+echo exporter.metric.expire.seconds=$EXPORTER_METRIC_EXPIRE_SECONDS >> config.properties
 echo kafka.consumer.topics=$KAFKA_CONSUMER_TOPICS                   >> config.properties
 echo kafka.consumer.remove.prefix=$KAFKA_CONSUMER_REMOVE_PREFIX     >> config.properties
 echo consul.server.url=$CONSUL_SERVER_URL                           >> config.properties
@@ -14,7 +14,7 @@ echo group.id=$GROUP_ID                                             >> config.pr
 
 
 echo exporter.port=$EXPORTER_PORT
-echo exporter.metrix.expire.seconds=$EXPORTER_METRIX_EXPIRE_SECONDS
+echo exporter.metric.expire.seconds=$EXPORTER_METRIC_EXPIRE_SECONDS
 echo kafka.consumer.topics=$KAFKA_CONSUMER_TOPICS
 echo kafka.consumer.remove.prefix=$KAFKA_CONSUMER_REMOVE_PREFIX
 echo consul.server.url=$CONSUL_SERVER_URL
