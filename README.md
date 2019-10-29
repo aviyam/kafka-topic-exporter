@@ -1,6 +1,7 @@
 # Kafka Topic Exporter
 
-Consume Kafka topics and export to Prometheus wrapped in a docker image
+Consume Kafka topics and export to Prometheus wrapped in a [docker image](https://hub.docker.com/r/aviyam/kafka-topics-exporter)
+
 
 ### Run the exporter image
 
