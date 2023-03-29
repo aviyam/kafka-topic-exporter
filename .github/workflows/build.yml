@@ -20,7 +20,7 @@ jobs:
       run: docker build . --file Dockerfile --tag aviyam/kafka-topics-exporter:latest
       
     - name: Publish tag to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: aviyam/kafka-topics-exporter:latest
         username: ${{ secrets.DOCKER_USERNAME }}
